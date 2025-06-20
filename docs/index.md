@@ -4,7 +4,7 @@ Markdown技法を利用し、画像を入れよう。
 
 ## Images
 
-![Girl Image](docs/img_girl.jpg)
+![Girl Image](img_girl.jpg)
 
 ![Minion](https://octodex.github.com/images/minion.png)
 
