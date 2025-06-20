@@ -12,7 +12,6 @@
 
 ## Youtube Video
 
-**方法2: 動画リンクとして表示**
 [![YouTube Video](https://img.youtube.com/vi/dQw4w9WgXcQ/0.jpg)](https://www.youtube.com/watch?v=dQw4w9WgXcQ)
 ---
 
