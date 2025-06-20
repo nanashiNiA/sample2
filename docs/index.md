@@ -1,91 +1,78 @@
 # Markdownサンプル集
 
-このドキュメントは、Markdownの主要な構文とメディアの埋め込み方法を示すサンプル集です。
-
----
-
-# h1 見出し
-## h2 見出し
-### h3 見出し
-#### h4 見出し
-##### h5 見出し
-###### h6 見出し
-
-## 強調表現
-
-**太字テキスト**
-**太字テキスト（別記法）**
-*斜体テキスト*
-*斜体テキスト（別記法）*
-~~取り消し線~~
-
-## 引用
-
-> 引用はネストすることもできます...
->> ...大なり記号を隣り合わせで使うことで...
-> > > ...または矢印の間にスペースを入れて記述します。
-
 ## 画像
 
-Markdown技法を利用し、画像を入れる例：
 
-![Snow Miku 2025](image)
 
-![Minion](https://octodex.github.com/images/minion.png)
-
-![Stormtroopocat](https://octodex.github.com/images/stormtroopocat.jpg "The Stormtroopocat")
+![Girl Image](img_girl.jpg)
 
 ## 動画
 
-Markdown技法を利用し、動画を入れる例：
 
 ### YouTube Video
-<iframe width="560" height="315" src="https://www.youtube.com/embed/QcHZdiVD0Ww"
+<iframe width="560" height="315" src="https://www.youtube.com/embed/dQw4w9WgXcQ"
 title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write;
 encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-## リスト
+---
 
-### 順序なしリスト
-+ `+`、`-`、または `*` で始める行でリストを作成
-+ サブリストは2スペースでインデント:
-  - マーカー文字の変更で新しいリスト開始:
+# h1 Heading
+## h2 Heading
+### h3 Heading
+#### h4 Heading
+##### h5 Heading
+###### h6 Heading
+
+## Emphasis
+**This is bold text**
+**This is bold text**
+*This is italic text*
+*This is italic text*
+~~Strikethrough~~
+
+## Blockquotes
+> Blockquotes can also be nested...
+>> ...by using additional greater-than signs right next to each other...
+> > > ...or with spaces between arrows.
+
+## Lists
+Unordered
++ Create a list by starting a line with `+`, `-`, or `*`
++ Sub-lists are made by indenting 2 spaces:
+  - Marker character change forces new list start:
     * Ac tristique libero volutpat at
     + Facilisis in pretium nisl aliquet
     - Nulla volutpat aliquam velit
-+ とても簡単！
++ Very easy!
 
-### 順序ありリスト
+Ordered
 1. Lorem ipsum dolor sit amet
 2. Consectetur adipiscing elit
 3. Integer molestie lorem at massa
 
-1. 連続した番号を使用することもできます...
-1. ...または全ての番号を `1.` のままにすることも可能
+1. You can use sequential numbers...
+1. ...or keep all the numbers as `1.`
 
-オフセット付きの番号開始:
+Start numbering with offset:
 57. foo
 1. bar
 
-## コード
+## Code
+Inline `code`
 
-インライン `code`
+Indented code
 
-インデントされたコード
-
-    // コメント
+    // Some comments
     line 1 of code
     line 2 of code
     line 3 of code
 
-コードブロック「フェンス」
-
+Block code "fences"
 ```
-ここにサンプルテキスト...
+Sample text here...
 ```
 
-シンタックスハイライト
-
+Syntax highlighting
 ``` js
 var foo = function (bar) {
   return bar++;
@@ -94,45 +81,39 @@ var foo = function (bar) {
 console.log(foo(5));
 ```
 
-## テーブル
-
-| オプション | 説明 |
+## Tables
+| Option | Description |
 | ------ | ----------- |
-| data | テンプレートに渡されるデータを提供するデータファイルへのパス |
-| engine | テンプレート処理に使用されるエンジン。Handlebarsがデフォルト |
-| ext | 宛先ファイルに使用される拡張子 |
+| data | path to data files to supply the data that will be passed into templates. |
+| engine | engine to be used for processing templates. Handlebars is the default. |
+| ext | extension to be used for dest files. |
 
-右揃えの列
-
-| オプション | 説明 |
+Right aligned columns
+| Option | Description |
 | ------:| -----------:|
-| data | テンプレートに渡されるデータを提供するデータファイルへのパス |
-| engine | テンプレート処理に使用されるエンジン。Handlebarsがデフォルト |
-| ext | 宛先ファイルに使用される拡張子 |
+| data | path to data files to supply the data that will be passed into templates. |
+| engine | engine to be used for processing templates. Handlebars is the default. |
+| ext | extension to be used for dest files. |
 
-## リンク
+## Links
+[link text](http://dev.nodeca.com)
 
-[リンクテキスト](http://dev.nodeca.com)
+[link with title](http://nodeca.github.io/pica/demo/ "title text!")
 
-[タイトル付きリンク](http://nodeca.github.io/pica/demo/ "タイトルテキスト!")
+Autoconverted link https://github.com/nodeca/pica (enable linkify to see)
 
-自動変換されるリンク https://github.com/nodeca/pica （linkifyを有効にすると表示されます）
+### [Footnotes](https://github.com/markdown-it/markdown-it-footnote)
 
-### [脚注](https://github.com/markdown-it/markdown-it-footnote)
+Footnote 1 link[^first].
 
-脚注1のリンク[^first]。
+Footnote 2 link[^second].
 
-脚注2のリンク[^second]。
+Inline footnote^[Text of inline footnote] definition.
 
-インライン脚注^[インライン脚注のテキスト]の定義。
+Duplicated footnote reference[^second].
 
-重複した脚注参照[^second]。
+[^first]: Footnote **can have markup**
 
-[^first]: 脚注には**マークアップを含める**ことができ、
-複数の段落も可能です。
+and multiple paragraphs.
 
-[^second]: 脚注のテキスト。
-
----
-
-このサンプルは、Markdownの基本構文から高度な機能まで、メディアの埋め込みを含めて包括的にカバーしています。
+[^second]: Footnote text.
