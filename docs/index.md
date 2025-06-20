@@ -4,6 +4,8 @@ Markdown技法を利用し、画像を入れよう。
 
 ## Images
 
+![Girl Image](docs/img_girl.jpg)
+
 ![Minion](https://octodex.github.com/images/minion.png)
 
 ![Stormtroopocat](https://octodex.github.com/images/stormtroopocat.jpg "The Stormtroopocat")
@@ -11,9 +13,17 @@ Markdown技法を利用し、画像を入れよう。
 Markdown技法を利用し、動画を入れよう。
 
 ## Youtube Video
-<iframe width="560" height="315" src="https://www.youtube.com/embed/CUH6kvPJlx0"
+
+**方法1: 有効な動画を使用**
+<iframe width="560" height="315" src="https://www.youtube.com/embed/dQw4w9WgXcQ"
 title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write;
 encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+**方法2: 動画リンクとして表示**
+[![YouTube Video](https://img.youtube.com/vi/dQw4w9WgXcQ/0.jpg)](https://www.youtube.com/watch?v=dQw4w9WgXcQ)
+
+**方法3: プレーンリンク**
+[YouTube動画を見る](https://www.youtube.com/watch?v=dQw4w9WgXcQ)
 
 ---
 
